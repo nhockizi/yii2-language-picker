@@ -6,45 +6,6 @@ use Yii;
 use yii\helpers\Url;
 use yii\helpers\Html;
 
-/**
- * Language Picker widget.
- * 
- * Examples:
- * Pre-defined button list:
- * 
- * ~~~
- * \nhockizi\languagepicker\widgets\LanguagePicker::widget([
- *      'skin' => \nhockizi\languagepicker\widgets\LanguagePicker::SKIN_BUTTON,
- *      'size' => \nhockizi\languagepicker\widgets\LanguagePicker::SIZE_SMALL
- * ]);
- * ~~~
- * 
- * Pre-defined DropDown list:
- * 
- * ~~~
- *  \nhockizi\languagepicker\widgets\LanguagePicker::widget([
- *      'skin' => \nhockizi\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
- *      'size' => \nhockizi\languagepicker\widgets\LanguagePicker::SIZE_LARGE
- * ]);
- * ~~~
- * 
- * Defining your own template:
- * 
- * ~~~
- *  \nhockizi\languagepicker\widgets\LanguagePicker::widget([
- *      'itemTemplate' => '<li><a href="{link}"><i class="{language}" title="{language}"></i> {name}</a></li>',
- *      'activeItemTemplate' => '<a href="{link}" title="{language}"><i class="{language}"></i> {name}</a>',
- *      'parentTemplate' => '<div class="language-picker dropdown-list {size}"><div>{activeItem}<ul>{items}</ul></div></div>',
- *       
- *      'languageAsset' => 'nhockizi\languagepicker\bundles\LanguageLargeIconsAsset',      // StyleSheets
- *      'languagePluginAsset' => 'nhockizi\languagepicker\bundles\LanguagePluginAsset',    // JavasSripts
- * ]);
- * ~~~
- * 
- * 
- * @author Lajos Molnar <nhockizi.m@gmail.com>
- * @since 1.0
- */
 class LanguagePicker extends \yii\base\Widget
 {
 
